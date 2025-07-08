@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたのコーピングリスト</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #073B4C; /* Dark Blue from palette */
+        }
+        .main-category-card {
+            background-color: #FFFFFF;
+            border-radius: 0.75rem; /* rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .sub-category-card {
+            background-color: #F8F8F8; /* Light gray for sub-categories */
+            border-radius: 0.5rem; /* rounded-md */
+            padding: 1rem; /* p-4 */
+            margin-top: 0.75rem; /* mt-3 */
+        }
+        .main-category-title {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 700; /* font-bold */
+            margin-bottom: 1rem; /* mb-4 */
+            color: #118AB2; /* Blue from palette */
+        }
+        .sub-category-title {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 700; /* font-bold */
+            margin-bottom: 0.5rem; /* mb-2 */
+            color: #06D6A0; /* Green from palette */
+        }
+        .list-item {
+            padding-left: 0.5rem; /* pl-2 */
+            margin-bottom: 0.25rem; /* mb-1 */
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#118AB2] mb-4">あなたのコーピングリスト</h1>
+            <p class="text-lg text-gray-600">ストレス対処法を分類して、自分に合った方法を見つけましょう。</p>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- １．基本的な考え方 -->
+            <div class="main-category-card lg:col-span-2">
+                <h2 class="main-category-title">１．基本的な考え方 💡</h2>
+                <ul class="list-disc list-inside">
+                    <li class="list-item">１：自分の現状を知る</li>
+                    <li class="list-item">２：コーピングの種類をたくさん増やす</li>
+                    <li class="list-item">３：実践して振り返り、自分に合った方法を見つける</li>
+                    <li class="list-item">コーピングのタイプ：問題焦点型・情動焦点型・ストレス解消型</li>
+                </ul>
+            </div>
+
+            <!-- ２．心身のリラックス＆ケア -->
+            <div class="main-category-card">
+                <h2 class="main-category-title">２．心身のリラックス＆ケア 🛀</h2>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">身体的ケア 💪</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">ゆっくりお風呂に入る</li>
+                        <li class="list-item">フォームローラーでマッサージ</li>
+                        <li class="list-item">ストレッチ</li>
+                        <li class="list-item">屈伸運動</li>
+                        <li class="list-item">整体に行く</li>
+                        <li class="list-item">眼をあたためる</li>
+                        <li class="list-item">目薬をする</li>
+                        <li class="list-item">首をゆっくり回す</li>
+                        <li class="list-item">伸びをする</li>
+                        <li class="list-item">頭皮のマッサージをする</li>
+                        <li class="list-item">シャワーを浴びる</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">感覚的リフレッシュ 👃</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">珈琲を淹れる</li>
+                        <li class="list-item">アロマをたく</li>
+                        <li class="list-item">自然の音を聴く</li>
+                        <li class="list-item">深呼吸</li>
+                        <li class="list-item">水分補給</li>
+                        <li class="list-item">日光を浴びる</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">休息・睡眠 😴</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">ゴロゴロする</li>
+                        <li class="list-item">早寝早起き</li>
+                        <li class="list-item">仮眠をとる</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">身だしなみ ✨</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">歯磨きをする</li>
+                        <li class="list-item">スキンケア（パック）</li>
+                        <li class="list-item">髪を切る</li>
+                        <li class="list-item">ひげを伸ばす</li>
+                        <li class="list-item">顔を洗う</li>
+                        <li class="list-item">ひげをそる</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ３．気分転換＆アクティビティ -->
+            <div class="main-category-card">
+                <h2 class="main-category-title">３．気分転換＆アクティビティ 🎨</h2>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">エンターテイメント 🎬</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">Youtubeで好きな動画をみる</li>
+                        <li class="list-item">サッカーを観る</li>
+                        <li class="list-item">映画を観る</li>
+                        <li class="list-item">観たことのある映画を観る</li>
+                        <li class="list-item">ドラマを観る</li>
+                        <li class="list-item">バイクのVlogを観る</li>
+                        <li class="list-item">バイクの試乗動画を観る</li>
+                        <li class="list-item">サッカーの移籍情報についての動画を観る</li>
+                        <li class="list-item">SNSでサッカーの情報を観る</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">創作活動 🖌️</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">料理をする</li>
+                        <li class="list-item">絵を描く</li>
+                        <li class="list-item">ゼンタングルを描く</li>
+                        <li class="list-item">歌を唄う</li>
+                        <li class="list-item">パンケーキを作る</li>
+                        <li class="list-item">カレーを作る</li>
+                        <li class="list-item">グラフィックデザインを制作する</li>
+                        <li class="list-item">ＡＩで何かを作る</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">運動・移動 🚴</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">筋トレする</li>
+                        <li class="list-item">朝散歩をする</li>
+                        <li class="list-item">公園・自然の中を歩く</li>
+                        <li class="list-item">バイクに乗る</li>
+                        <li class="list-item">自転車に乗る</li>
+                        <li class="list-item">ダンスする</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">学習・自己成長 📚</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">勉強する</li>
+                        <li class="list-item">英会話の勉強</li>
+                        <li class="list-item">英語のセリフをマネする</li>
+                        <li class="list-item">読書する</li>
+                        <li class="list-item">雑誌を読む</li>
+                        <li class="list-item">本屋さんでいろいろな本をみる</li>
+                        <li class="list-item">図書館に行く</li>
+                        <li class="list-item">ＡＩと対話する</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">飲食 🍔</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">甘いものを食べる（クッキー・チョコ・サツマイモ・トウモロコシ）</li>
+                        <li class="list-item">外食をする</li>
+                        <li class="list-item">寿司を食べる</li>
+                        <li class="list-item">肉を食べる</li>
+                        <li class="list-item">魚を食べる</li>
+                        <li class="list-item">ご飯をたくさん食べる</li>
+                        <li class="list-item">ラーメンを食べる</li>
+                        <li class="list-item">カレーを食べる</li>
+                        <li class="list-item">お茶を飲む</li>
+                        <li class="list-item">珈琲を飲む</li>
+                        <li class="list-item">ノンアルコール飲料を飲む</li>
+                        <li class="list-item">炭酸飲料を飲む</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">特定の趣味 🎮</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">ゲームをする</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ４．思考の整理＆内省 -->
+            <div class="main-category-card">
+                <h2 class="main-category-title">４．思考の整理＆内省 🤔</h2>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">自己対話・肯定 👍</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">自分自身に言葉を投げかける（step by step. one by one. you'll be fine.）</li>
+                        <li class="list-item">伸びしろと考える</li>
+                        <li class="list-item">自分にもできると考える</li>
+                        <li class="list-item">ハードルを下げる</li>
+                        <li class="list-item">口角を上げる</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">計画・整理 📝</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">金融資産の確認</li>
+                        <li class="list-item">todoリストを作る</li>
+                        <li class="list-item">やりたいことを考える</li>
+                        <li class="list-item">買いたいものを考える</li>
+                        <li class="list-item">買いたいものリストを作成する</li>
+                        <li class="list-item">行きたいところリストを作成する</li>
+                        <li class="list-item">やりたいことリストを作成する</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">未来への想像 🔮</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">ポジティブな妄想をする</li>
+                        <li class="list-item">お金持ちになったらどんなこをとするか妄想</li>
+                        <li class="list-item">賃貸情報を観て妄想する</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">感情の言語化 ✍️</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">今感じていることを書きだす</li>
+                        <li class="list-item">自分の感情・思っていることを言葉にする（ジャーナリング）</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">視点変更 🔄</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">どうにかなる・なるようにしかならないと考える</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ５．環境の整備＆整理 -->
+            <div class="main-category-card">
+                <h2 class="main-category-title">５．環境の整備＆整理 🧹</h2>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">身の回りの整理 🧺</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">不用品を捨てる</li>
+                        <li class="list-item">掃除をする</li>
+                        <li class="list-item">床をフローリングシートで拭く</li>
+                        <li class="list-item">掃除機で掃除する</li>
+                        <li class="list-item">洗濯する</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">住環境の整備 🏡</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">換気をする</li>
+                        <li class="list-item">冷凍弁当を作り置きする</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ６．他者との交流＆外部との繋がり -->
+            <div class="main-category-card">
+                <h2 class="main-category-title">６．他者との交流＆外部との繋がり 🤝</h2>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">対人交流 🗣️</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">話を聞いてもらう</li>
+                        <li class="list-item">友人と話す</li>
+                        <li class="list-item">友人と会う</li>
+                        <li class="list-item">デイケアで利用者と雑談する</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">相談・支援 🧑‍🤝‍🧑</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">困っていることについて相談に乗ってもらう</li>
+                        <li class="list-item">支援者に相談する</li>
+                        <li class="list-item">デイケアのプログラムに参加する</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">外出・観察 🚶</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">良いデザインの空間に行く</li>
+                        <li class="list-item">良いデザインのものをみる</li>
+                        <li class="list-item">夕焼けを眺める</li>
+                        <li class="list-item">神社で願掛けする</li>
+                        <li class="list-item">芝生を歩く</li>
+                        <li class="list-item">街で人間観察</li>
+                        <li class="list-item">大通りの車・バイクを眺める</li>
+                        <li class="list-item">バイク屋さんでバイクを眺める</li>
+                        <li class="list-item">バイカーの集まる場所でバイクを眺める</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">ショッピング 🛍️</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">服を買う</li>
+                        <li class="list-item">ウィンドウショッピング</li>
+                        <li class="list-item">ネット通販で買い物</li>
+                    </ul>
+                </div>
+                <div class="sub-category-card">
+                    <h3 class="sub-category-title">動物との触れ合い 🐾</h3>
+                    <ul class="list-disc list-inside">
+                        <li class="list-item">動物観察</li>
+                        <li class="list-item">犬と触れ合う</li>
+                        <li class="list-item">猫と触れ合う</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ７．専門的アプローチ -->
+            <div class="main-category-card lg:col-span-2">
+                <h2 class="main-category-title">７．専門的アプローチ 🧠</h2>
+                <ul class="list-disc list-inside">
+                    <li class="list-item">リフレーミング</li>
+                    <li class="list-item">認知行動療法</li>
+                    <li class="list-item">マインドフルネス</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="text-center mt-12 py-6 border-t border-gray-300">
+            <p class="text-gray-600">このリストが、あなたのストレス対処に役立つことを願っています。</p>
+        </footer>
+    </div>
+</body>
+</html>
